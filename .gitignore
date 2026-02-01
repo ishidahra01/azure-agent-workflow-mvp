@@ -205,3 +205,51 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Next.js
+.next/
+out/
+next-env.d.ts
+
+# Azure Functions
+func-workflow/dist/
+func-workflow/local.settings.json
+func-workflow/.vscode/
+
+# Mock Tools
+mock-tools/dist/
+
+# UI
+ui/.env.local
+ui/.env.*.local
+
+# TypeScript
+*.tsbuildinfo
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
