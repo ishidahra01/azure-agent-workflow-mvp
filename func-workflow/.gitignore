@@ -1,0 +1,63 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Directory for instrumented libs
+lib-cov
+
+# Coverage directory
+coverage
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Output of 'npm pack'
+*.tgz
+
+# dotenv environment variable files
+.env
+.env.test
+.env.production
+local.settings.json
+
+# Build output
+dist/
+build/
+
+# Azure Functions
+bin/
+obj/
+appsettings.json
+__blobstorage__
+__queuestorage__
+__azurite_db*__.json
+.python_packages/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
