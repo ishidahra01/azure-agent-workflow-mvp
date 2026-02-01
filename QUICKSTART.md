@@ -52,8 +52,11 @@ Create `func-workflow/local.settings.json`:
 
 **Example:**
 ```json
-"AOAI_BASE_URL": "https://my-openai.openai.azure.com/openai/deployments/gpt-4o"
+"AOAI_BASE_URL": "https://my-openai.openai.azure.com/openai/deployments/gpt-4o",
+"AOAI_API_VERSION": "2024-08-01-preview"
 ```
+
+**Note:** The AOAI_BASE_URL should include the full path to your deployment endpoint.
 
 ### B. Frontend Configuration
 

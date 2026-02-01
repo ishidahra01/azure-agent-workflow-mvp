@@ -23,7 +23,7 @@ export async function callMockInternalStatus(
 
   try {
     const response = await axios.get(
-      `${config.mockTools.baseUrl}/api/submit/${input.submissionId}/status`,
+      `${config.mockTools.baseUrl}/mock/internal/status/${input.submissionId}`,
       {
         timeout: 10000, // 10 seconds
       }
@@ -31,7 +31,7 @@ export async function callMockInternalStatus(
 
     const submissionStatus = response.data.status;
     const isComplete =
-      submissionStatus === 'completed' || submissionStatus === 'failed';
+      submissionStatus === 'Completed' || submissionStatus === 'Rejected';
 
     context.log(
       `Submission status: ${submissionStatus}, complete: ${isComplete}`

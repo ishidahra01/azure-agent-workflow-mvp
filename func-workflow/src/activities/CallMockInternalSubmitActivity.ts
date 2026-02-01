@@ -27,7 +27,7 @@ export async function callMockInternalSubmit(
 
   try {
     const response = await axios.post(
-      `${config.mockTools.baseUrl}/api/submit`,
+      `${config.mockTools.baseUrl}/mock/internal/submit`,
       {
         documentId: input.documentId,
         content: input.draft,
@@ -38,8 +38,8 @@ export async function callMockInternalSubmit(
       }
     );
 
-    const submissionId = response.data.submissionId;
-    const submissionStatus = response.data.status || 'pending';
+    const submissionId = response.data.requestId;
+    const submissionStatus = response.data.status || 'Received';
 
     context.log(
       `Submission created with ID: ${submissionId}, status: ${submissionStatus}`

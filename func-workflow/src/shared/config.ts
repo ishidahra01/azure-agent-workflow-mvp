@@ -39,7 +39,7 @@ export const config: Config = {
     baseUrl: getEnvVar('AOAI_BASE_URL'),
     deployment: getEnvVar('AOAI_DEPLOYMENT'),
     apiKey: getEnvVar('AOAI_API_KEY'),
-    apiVersion: '2024-02-15-preview',
+    apiVersion: process.env.AOAI_API_VERSION || '2024-08-01-preview',
   },
   mockTools: {
     baseUrl: getEnvVar('MOCK_TOOLS_BASE_URL'),

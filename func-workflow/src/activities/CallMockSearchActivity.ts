@@ -23,10 +23,10 @@ export async function callMockSearch(
 
   try {
     const response = await axios.post(
-      `${config.mockTools.baseUrl}/api/search`,
+      `${config.mockTools.baseUrl}/mock/search`,
       {
-        query: input.searchQuery,
-        limit: 5,
+        queryText: input.searchQuery,
+        maxResults: 5,
       },
       {
         timeout: 10000, // 10 seconds
