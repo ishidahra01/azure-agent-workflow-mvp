@@ -15,6 +15,15 @@ Azure Durable Functions backend implementation using TypeScript and Azure Functi
 
 See [func-workflow/README.md](func-workflow/README.md) for detailed documentation.
 
+### mock-tools/
+Express/TypeScript API server providing mock endpoints for testing the workflow system.
+
+**Mock APIs:**
+- **Search API**: Simulates document search with realistic mock data
+- **Internal System API**: Simulates submission processing with automatic status transitions
+
+See [mock-tools/README.md](mock-tools/README.md) for API documentation and setup.
+
 ## Workflow Overview
 
 1. **Text Extraction**: Extract text from raw document content
