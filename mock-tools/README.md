@@ -2,6 +2,8 @@
 
 A lightweight Express/TypeScript API server that provides mock endpoints for testing workflow systems.
 
+> **Note**: This server uses `/mock/search` and `/mock/internal/*` endpoints. If integrating with the func-workflow Azure Functions, ensure the activity functions use the correct endpoint paths and request body field names (`queryText`, `maxResults`, `title`, `description`).
+
 ## Features
 
 - **Mock Search API**: Simulates document search functionality with realistic data

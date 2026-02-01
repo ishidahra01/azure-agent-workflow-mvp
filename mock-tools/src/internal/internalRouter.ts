@@ -15,7 +15,7 @@ interface SubmitResponse {
   status: string;
   message: string;
   submittedAt: string;
-  estimatedCompletionTime: string;
+  estimatedCompletionTime?: string;
 }
 
 interface StatusResponse {
@@ -69,7 +69,7 @@ router.post('/submit', async (req: Request, res: Response) => {
       status: submission.status,
       message: 'Submission received successfully',
       submittedAt: submission.submittedAt.toISOString(),
-      estimatedCompletionTime: submission.estimatedCompletionTime!.toISOString(),
+      estimatedCompletionTime: submission.estimatedCompletionTime?.toISOString(),
     };
 
     console.log(`[Internal API] Submission created with status: ${submission.status}`);
