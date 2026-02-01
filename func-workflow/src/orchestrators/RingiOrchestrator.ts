@@ -138,7 +138,7 @@ const ringiOrchestrator: OrchestrationHandler = function* (
           'HumanFixEvent'
         );
         
-        const winner = yield context.df.Task.any([humanFixEvent, humanFixTimeout]);
+        yield context.df.Task.any([humanFixEvent, humanFixTimeout]);
         
         // Cancel the timer if human fixed before timeout
         if (!humanFixTimeout.isCompleted) {
@@ -204,7 +204,7 @@ const ringiOrchestrator: OrchestrationHandler = function* (
         'DraftApprovalEvent'
       );
       
-      const winner = yield context.df.Task.any([approvalEvent, approvalTimeout]);
+      yield context.df.Task.any([approvalEvent, approvalTimeout]);
       
       // Cancel the timer if approved before timeout
       if (!approvalTimeout.isCompleted) {
